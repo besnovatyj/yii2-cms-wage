@@ -13,7 +13,8 @@
   "minimum-stability": "stable",
   "extra": {
     "moduleClass": "Besnovatyj\\Wage\\Module",
-    "moduleId": "Wage"
+    "moduleId": "Wage",
+    "bescms": { "kind": "module" }
   },
   "keywords": [
     "yii2",
