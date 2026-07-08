@@ -23,7 +23,7 @@ class PayslipItemForm extends BaseForm
     public bool   $is_tax     = false;
     public int    $sort_order = 0;
 
-    public function __construct(PayslipItem $item = null, array $config = [])
+    public function __construct(?PayslipItem $item = null, array $config = [])
     {
         if ($item !== null) {
             $this->title      = $item->title;
