@@ -7,6 +7,9 @@
 
 declare(strict_types=1);
 
+use Besnovatyj\Contracts\adminMenu\AdminMenuLocation;
+use Besnovatyj\Contracts\adminMenu\AdminMenuPlacement;
+
 return [
     // Дашборд: помесячный график
     [
@@ -18,13 +21,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location'      => 'left-sidebar',
-                    'group'         => 'Wage',
-                    'groupIcon'     => 'bi bi-cash-coin',
-                    'priority'      => 100,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Wage',
+                    groupIcon: 'bi bi-cash-coin',
+                    groupPriority: 100,
+                    priority: 100,
+                ),
             ],
         ],
     ],
@@ -39,13 +42,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location'      => 'left-sidebar',
-                    'group'         => 'Wage',
-                    'groupIcon'     => 'bi bi-cash-coin',
-                    'priority'      => 200,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Wage',
+                    groupIcon: 'bi bi-cash-coin',
+                    groupPriority: 100,
+                    priority: 200,
+                ),
             ],
         ],
     ],
@@ -60,13 +63,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location'      => 'left-sidebar',
-                    'group'         => 'Wage',
-                    'groupIcon'     => 'bi bi-cash-coin',
-                    'priority'      => 400,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Wage',
+                    groupIcon: 'bi bi-cash-coin',
+                    groupPriority: 100,
+                    priority: 400,
+                ),
             ],
         ],
     ],
@@ -81,13 +84,13 @@ return [
         },
         '_meta' => [
             'placements' => [
-                [
-                    'location'      => 'left-sidebar',
-                    'group'         => 'Wage',
-                    'groupIcon'     => 'bi bi-cash-coin',
-                    'priority'      => 300,
-                    'groupPriority' => 100,
-                ],
+                new AdminMenuPlacement(
+                    location: AdminMenuLocation::LeftSidebar,
+                    group: 'Wage',
+                    groupIcon: 'bi bi-cash-coin',
+                    groupPriority: 100,
+                    priority: 300,
+                ),
             ],
         ],
     ],
